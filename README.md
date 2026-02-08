@@ -111,9 +111,11 @@ HEADLESS=false
 
 ## 📊 Test Execution Report
 
-El reporte se genera automáticamente en `test-results/cucumber-report.html`
+El reporte se genera automáticamente en `test-results/cucumber-report.html` después de ejecutar los tests.
 
-**Abre el reporte:**
+### 📱 Acceder al reporte
+
+**Opción 1: Localmente**
 ```bash
 # En Windows
 start test-results/cucumber-report.html
@@ -122,9 +124,21 @@ start test-results/cucumber-report.html
 open test-results/cucumber-report.html
 ```
 
-### Reports disponibles
-- **HTML Report**: `test-results/cucumber-report.html`
-- **JSON Report**: `test-results/cucumber-report.json`
+**Opción 2: Desde GitHub Pages (URL pública)**
+```
+https://gabriel17qa.github.io/QA-CHALLENGE---ZONA-E/test-results/cucumber-report.html
+```
+
+**Opción 3: Con Live Server en VS Code**
+1. Instala la extensión "Live Server"
+2. Haz clic derecho en `test-results/cucumber-report.html`
+3. Selecciona "Open with Live Server"
+
+### 📋 Reports disponibles
+- **HTML Report**: `test-results/cucumber-report.html` (reporte visual)
+- **JSON Report**: `test-results/cucumber-report.json` (para parsing programático)
+
+---
 
 ## 📝 Flujos automatizados
 
