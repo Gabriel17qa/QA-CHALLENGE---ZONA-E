@@ -1,5 +1,5 @@
 {
-  "name": "camuzzi-reclamos-playwright",
+  "name": "QA-CHALLENGE-ZONA-E",
   "version": "1.0.0",
   "scripts": {
     "cucumber": "cucumber-js --config cucumber.js",
