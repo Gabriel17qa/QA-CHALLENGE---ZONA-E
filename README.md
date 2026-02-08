@@ -126,62 +126,6 @@ open test-results/cucumber-report.html
 - **HTML Report**: `test-results/cucumber-report.html`
 - **JSON Report**: `test-results/cucumber-report.json`
 
----
-
-## 🐛 Bugs encontrados
-
-Durante la exploración se identificaron los siguientes bugs:
-
-| ID | Descripción | Severidad | Estado |
-|---|---|---|---|
-| BUG-001 | [Descripción detallada] | Alta | Documentado |
-| BUG-002 | [Descripción detallada] | Media | Documentado |
-| BUG-003 | [Descripción detallada] | Baja | Documentado |
-
-*Ver documento completo de bugs en: `docs/bugs-report.pdf`*
-
----
-
-## ✅ Casos de Prueba
-
-Se diseñaron **10 casos de prueba** para el módulo de Login:
-
-### Casos Positivos:
-1. Login exitoso con credenciales válidas
-2. Navegación post-login
-
-### Casos Negativos:
-3. Login con usuario bloqueado
-4. Login con contraseña incorrecta
-5. Login con usuario inexistente
-6. Login con campos vacíos
-
-### Edge Cases:
-7. Login con espacios en blanco
-8. Verificación de mensajes de error
-9. Reintentos de login
-10. Validación de sesión
-
-*Ver casos detallados en: `docs/test-cases.xlsx`*
-
----
-
-## 🔐 Credenciales de prueba
-
-Disponibles en https://www.saucedemo.com/
-
-```
-Usuario: standard_user
-Contraseña: secret_sauce
-
-Otros usuarios disponibles:
-- locked_out_user (bloqueado)
-- problem_user (comportamiento inconsistente)
-- performance_glitch_user (carga lenta)
-```
-
----
-
 ## 📝 Flujos automatizados
 
 ### 1️⃣ Login (Login.feature)
@@ -265,7 +209,7 @@ test/
 - Cleanup después de tests
 
 ✅ **Reportes automáticos**
-- HTML y JSON
+- HTML 
 - Trazabilidad completa
 
 ---
@@ -290,20 +234,3 @@ test/
 
 Este proyecto es parte de un QA Challenge educativo.
 
----
-
-## ✨ Entregables del challenge
-
-- ✅ Repositorio GitHub público
-- ✅ README.md con instrucciones
-- ✅ Tests automatizados (5+)
-- ✅ Page Object Model
-- ✅ Test Execution Report
-- ✅ Documento de bugs
-- ✅ Casos de prueba documentados
-- ✅ Estrategia de testing
-
----
-
-**Última actualización**: Febrero 2026
-**Estado**: ✅ Completado
