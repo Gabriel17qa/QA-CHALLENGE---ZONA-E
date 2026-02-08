@@ -2,8 +2,8 @@
 # Playwright
 node_modules/
 /test-results/
-!/reports/cucumber-report.html
-!/reports/cucumber-report.json
+!/test-results/cucumber-report.html
+!/test-results/cucumber-report.json
 /playwright-report/
 /blob-report/
 /playwright/.cache/

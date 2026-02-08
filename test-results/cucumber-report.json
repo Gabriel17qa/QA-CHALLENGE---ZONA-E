@@ -1,0 +1,757 @@
+[
+  {
+    "description": "  Como usuario autenticado\n  Quiero gestionar los productos del carrito\n  Para continuar con el proceso de compra",
+    "elements": [
+      {
+        "description": "",
+        "id": "carrito-de-compras;visualizar-productos-en-el-carrito",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Visualizar productos en el carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1261739399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "el usuario inicio sesion correctamente",
+            "match": {
+              "location": "test\\step-definitions\\common.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3834139400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "tiene al menos un producto agregado al carrito",
+            "match": {
+              "location": "test\\step-definitions\\carrito.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36102399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el usuario accede al carrito",
+            "match": {
+              "location": "test\\step-definitions\\carrito.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313741199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "se muestran los productos agregados",
+            "match": {
+              "location": "test\\step-definitions\\carrito.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12490000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 99357299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "carrito-de-compras;eliminar-producto-desde-el-carrito",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Eliminar producto desde el carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 179016799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "el usuario inicio sesion correctamente",
+            "match": {
+              "location": "test\\step-definitions\\common.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358885699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "tiene al menos un producto agregado al carrito",
+            "match": {
+              "location": "test\\step-definitions\\carrito.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32888199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "el usuario elimina el producto del carrito",
+            "match": {
+              "location": "test\\step-definitions\\carrito.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33482799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "el carrito no contiene productos",
+            "match": {
+              "location": "test\\step-definitions\\carrito.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2682200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52001000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "carrito-de-compras",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Carrito de compras",
+    "tags": [],
+    "uri": "test\\features\\Carrito.feature"
+  },
+  {
+    "description": "  Como usuario autenticado\n  Quiero completar el proceso de compra\n  Para finalizar la adquisición de productos",
+    "elements": [
+      {
+        "description": "",
+        "id": "proceso-de-checkout;checkout-exitoso",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Checkout exitoso",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 181179900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "el usuario inicio sesion correctamente",
+            "match": {
+              "location": "test\\step-definitions\\common.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 355395999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "tiene productos en el carrito",
+            "match": {
+              "location": "test\\step-definitions\\checkout.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76222200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "se encuentra en la pantalla de checkout",
+            "match": {
+              "location": "test\\step-definitions\\checkout.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33968300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "el usuario completa el formulario de checkout con datos válidos",
+            "match": {
+              "location": "test\\step-definitions\\checkout.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 139274900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "confirma la compra",
+            "match": {
+              "location": "test\\step-definitions\\checkout.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 432699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "se muestra el mensaje de compra exitosa",
+            "match": {
+              "location": "test\\step-definitions\\checkout.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4546500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 125213200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "proceso-de-checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Proceso de checkout",
+    "tags": [],
+    "uri": "test\\features\\Checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-de-usuario;login-exitoso-con-credenciales-válidas",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Login exitoso con credenciales válidas",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 170907300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario se encuentra en la pantalla de login",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 303801900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "el usuario ingresa credenciales válidas",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96877899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el usuario es redirigido a la pantalla de productos",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7915399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 57803700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-de-usuario;login-con-contraseña-incorrecta",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Login con contraseña incorrecta",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 180358500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario se encuentra en la pantalla de login",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 261147800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "el usuario ingresa el usuario \"standard_user\" y la contraseña \"incorrecta\"",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95010700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "se muestra un mensaje de error",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4177299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "el usuario permanece en la pantalla de login",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3054199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 75807099
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-de-usuario;login-con-usuario-bloqueado",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Login con usuario bloqueado",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 193054599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario se encuentra en la pantalla de login",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 237888799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "el usuario ingresa el usuario \"locked_out_user\" y la contraseña válida",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 82212000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "se muestra un mensaje indicando que el usuario está bloqueado",
+            "match": {
+              "location": "test\\step-definitions\\loginSteps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3249500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50935600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-de-usuario",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login de usuario",
+    "tags": [],
+    "uri": "test\\features\\Login.feature"
+  },
+  {
+    "description": "  Como usuario autenticado\n  Quiero visualizar y seleccionar productos\n  Para agregarlos al carrito de compras",
+    "elements": [
+      {
+        "description": "",
+        "id": "gestión-de-productos;visualizar-listado-de-productos",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Visualizar listado de productos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 176810099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "el usuario inicio sesion correctamente",
+            "match": {
+              "location": "test\\step-definitions\\common.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 352476300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "se encuentra en la pantalla de productos",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3486600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "se muestra el listado de productos disponibles",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2771200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 77518700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "gestión-de-productos;agregar-un-producto-al-carrito",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Agregar un producto al carrito",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 184160499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "el usuario inicio sesion correctamente",
+            "match": {
+              "location": "test\\step-definitions\\common.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 389134799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "se encuentra en la pantalla de productos",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3253800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "el usuario agrega un producto al carrito",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40463899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "el producto se refleja en el contador del carrito",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5316500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60388699
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "gestión-de-productos;remover-un-producto-del-carrito-desde-productos",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Remover un producto del carrito desde productos",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 170832300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "el usuario inicio sesion correctamente",
+            "match": {
+              "location": "test\\step-definitions\\common.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 367525700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "se encuentra en la pantalla de productos",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10943100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "el usuario tiene un producto agregado al carrito",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58636999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "el usuario remueve el producto",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28065800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "el carrito queda vacío",
+            "match": {
+              "location": "test\\step-definitions\\products.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3499899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51162900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "gestión-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Gestión de productos",
+    "tags": [],
+    "uri": "test\\features\\Productos.feature"
+  }
+]
