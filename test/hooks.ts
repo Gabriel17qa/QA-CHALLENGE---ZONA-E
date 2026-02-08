@@ -22,7 +22,7 @@ export class CustomWorld extends World {
 
 Before<CustomWorld>(async function () {
   this.browser = await chromium.launch({
-    headless: false // headless: true para CI
+    headless: true
   });
 
   this.page = await this.browser.newPage();
